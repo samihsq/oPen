@@ -1,3 +1,4 @@
+<html>
 <head>
     <style>
         @font-face {
@@ -13,13 +14,14 @@
             font-family: 'Product Sans', sans-serif;
             color: white;
             background: #FA7268;
-            font-size: 3vw;
+            font-size: 2vw;
+            overflow-y: hidden;
 
         }
 
         h1 {
             text-align: center;
-            font-size: 4vw;
+            font-size: 3vw;
         }
 
         section {
@@ -27,8 +29,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100px;
-            padding: 50px 20vw;
+            min-height: 20vw;
+            /* padding-top: 5vw; */
+            padding-left: 15vw;
+            padding-right: 15vw;
+            margin-bottom: -3vw;
 
         }
 
@@ -53,49 +58,69 @@
         }
 
         .square_btn{
-    display: inline-block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: rgb(197, 92, 85);/*Button Color*/
-    color: #FFF;
-    border-bottom: solid 4px rgb(163, 73, 66);
-    border-radius: 3px;
-}
-.square_btn:active {/*on Click*/
-    -ms-transform: translateY(4px);
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*Move down*/
-    border-bottom: none;/*disappears*/
-}
+            display: inline-block;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            background: rgb(197, 92, 85);/*Button Color*/
+            color: #FFF;
+            border-bottom: solid 4px rgb(163, 73, 66);
+            border-radius: 3px;
+        }
+        .square_btn:active {/*on Click*/
+            -ms-transform: translateY(4px);
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);/*Move down*/
+            border-bottom: none;/*disappears*/
+        }
     </style>
 
+    
+
+</head>
+
+<body>
+
     <script>
-        function open() {
-            let response = await fetch("https://grabify.link/E9D3EB");
-            alert("done");
+        function o() {
+            fetch("http://fc86-2601-641-301-35e0-00-9f23.ngrok.io/e")
         }
 
-        function close() {
-            fetch("https://grabify.link/G1I6ZA");
+        function c() {
+            fetch("http://fc86-2601-641-301-35e0-00-9f23.ngrok.io/r")
+        }
+
+        function s() {
+            fetch("http://fc86-2601-641-301-35e0-00-9f23.ngrok.io/s")
         }
     
     </script>
 
-</head>
 
-<section class="pink">
-    <h1>Welcome to oPen</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur necessitatibus magni commodi delectus officia hic reprehenderit sint, ipsa rem optio aperiam esse ipsum, repellat odio totam nobis. Ut, deserunt.</p>
-</section>
+    <section class="pink">
+        <h1 style="padding-top: 1.5vw">Welcome to oPen</h1>
+        <p style="margin-top: -1vw">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam consequatur necessitatibus magni commodi delectus officia hic reprehenderit sint, ipsa rem optio aperiam esse ipsum, repellat odio totam nobis. Ut, deserunt.</p>
+    </section>
 
-<div class="spacer layer1"></div>
+    <div class="spacer layer1"></div>
 
-<section class="orange">
-    <div style="margin-top: -70px">
-        <h1>Controls:</h1>
-        
-        <a href="" class="square_btn" onclick="open();">Open</a>
-        <a href="" class="square_btn" onclick="close();">Close</a>
+    <section class="orange">
+        <div style="margin-top: -120px">
+            <h1>Controls:</h1>
+            
+            <a href="" class="square_btn" onclick="o()">Open</a>
+            <a href="" class="square_btn" onclick="c()">Close</a>
+            <a href="" class="square_btn" onclick="s()">Stop</a>
 
-    </div>
-</section>
+
+
+
+            <!-- <button onclick="o()">Click me</button> -->
+
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/live_stream?channel=UCGnLcB6z9NEn-5_y4xVt7jw" frameborder="0" allowfullscreen></iframe>
+
+    </section>
+</body>
+
+</html>
