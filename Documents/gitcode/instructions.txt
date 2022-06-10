@@ -1,0 +1,9 @@
+steps:
+1. sh /home/autopen/Documents/gitcode/atstart.sh
+2. check ngrok
+3. edit ngrok in script of /home/autopen/Documents/gitcode/index.html
+4. vdo.ninja
+5. put link in iframe of /home/autopen/Documents/gitcode/index.html
+6. sudo fuser -k 8080/tcp
+7. cd /usr/local/openresty/nginx
+8.  sudo /usr/local/openresty/nginx/sbin/nginx -p `pwd`/ -c /usr/local/openresty/nginx/conf/nginx.conf
