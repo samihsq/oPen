@@ -1,0 +1,10 @@
+/home/autopen/files/e.py:10: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(in1,GPIO.OUT)
+/home/autopen/files/e.py:11: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(in2,GPIO.OUT)
+/home/autopen/files/e.py:12: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(en,GPIO.OUT)
+Traceback (most recent call last):
+  File "/home/autopen/files/e.py", line 24, in <module>
+    signal.pause()
+KeyboardInterrupt
