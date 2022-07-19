@@ -1,0 +1,183 @@
+<!-- HTML FOR MAIN PAGE -->
+
+<html>
+<head>
+    <title>oPen #1</title>
+    <style>
+        @font-face {
+            font-family: 'Product Sans';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Product Sans'), local('ProductSans-Regular'), url(https://fonts.gstatic.com/s/productsans/v9/HYvgU2fE2nRJvZ5JFAumwRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Product Sans', sans-serif;
+            color: white;
+            background: #FA7268;
+            font-size: 20px;
+            /* overflow-y: hidden; */
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            min-height: 130px;
+            padding-left: 150px;
+            padding-right: 150px;
+            margin-bottom: -30px;
+            
+
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            body {
+                font-size: 2vw;
+            }
+            
+            h1{
+                font-size: 3vw;
+            }
+            
+            section {
+                min-height: 13vw;
+            /* padding-top: 5vw; */
+            padding-left: 15vw;
+            padding-right: 15vw;
+            margin-bottom: -3vw;
+            }
+
+            
+        }
+
+        .orange {
+            background: #FA7268;
+        }
+
+        .pink {
+            background: #C62368;
+        }
+        
+        .yellow {
+            background: #FCAF3C;
+        }
+
+        .spacer {
+            aspect-ratio: 900/200;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .layer1 {
+            background-image: url('/Documents/gitcode/layer1v2.svg')
+        }
+        
+        .layer2 {
+            background-image: url('/Documents/gitcode/layer2v2.svg')
+        }
+
+        .square_btn{
+           
+            
+            padding: 0.5em 1em;
+            text-decoration: none;
+            background: #b31f5c;/*Button Color*/
+            color: #FFF;
+            border-bottom: solid 4px #8a1948;
+            border-radius: 3px;
+
+            float: right;
+        }
+        .square_btn:active {/*on Click*/
+            -ms-transform: translateY(4px);
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);/*Move down*/
+            border-bottom: none;/*disappears*/
+            /*margin-bottom:4px;*/
+        }
+        
+        .vids {
+            display:inline; 
+            max-width: 100%; 
+            height: auto
+        }
+    </style>
+
+    
+
+</head>
+
+<body onload="startup()">
+
+    <script>
+        
+       
+        
+        
+    
+    </script>
+
+
+    <section class="pink">        
+    
+        <div style="float:right">
+        <a class="square_btn" onclick="" align="right">About Me</a>
+        </div>    
+    
+        <div style="float:right">
+        <a class="square_btn" onclick="" align="right">Log in</a>
+        </div>   
+
+        <h1 style="padding-top: 1.5vw; margin-bottom: -1vw">Welcome to oPen</h1>
+    </section>
+
+    <div class="spacer layer1"></div>
+
+    <section class="orange">
+        <div style="margin-top: -60px">
+            <h1 style="text-decoration:underline">Why oPen</h1>
+            
+            
+        </div >
+        <div style="padding-top:20px; margin:auto">
+            
+    </section>
+    
+    <div class="spacer layer2"></div>
+        
+    <section class = "yellow">
+        
+        <h1> Thanks to: </h1>
+        <table>
+            <tr>
+                <td>
+                    <img class="vids" align="left" src="/Documents/gitcode/lwl.png"/>
+                </td>
+                <td>
+                    <img class="vids" align="left" src="/Documents/gitcode/acr.png"/>
+                </td>
+            </tr>
+            
+        </table>
+        
+    </section>
+
+    
+
+</body>
+
+</html>
+
+
