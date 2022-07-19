@@ -1,0 +1,10 @@
+
+*.t
+*.patch
+*.h
+*.pl
+*.c
+*.pod
+*.tt2
+*.lua
+Documents/gitcode/autopen/
